@@ -1,7 +1,6 @@
 {
 	"name": "adamcmoore/insurance-hub",
     "description": "API wrapper for Insurance Hub, based on https://github.com/Insure-Tech/InsuranceHub.Client.Php",
-    "homepage": "https://smccoachhire.com",
     "authors": [
         {
             "name": "Adam Moore",

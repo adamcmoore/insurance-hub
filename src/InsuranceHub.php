@@ -21,7 +21,7 @@ class InsuranceHub
 		$this->apiKey              = $apiKey;
 		$this->offeringRequestURL = $offeringRequestURL;
 		$this->offeringResultURL  = $offeringResultURL;
-		$this->certPath            = getcwd()."/ComodoCACert.cer";;
+		$this->certPath            = __DIR__.'/../ComodoCACert.cer';
 	}
 
 

@@ -1,4 +1,4 @@
-<?php 
+<?php
 namespace InsuranceHub;
 
 class AuthToken
@@ -16,6 +16,6 @@ class AuthToken
     {
         $date = gmdate('dmY');
 
-        return base64_encode(hash_hmac('sha1', $this->formattedVendorId.$date, $this->formattedApiKey, true));
+        return base64_encode(hash_hmac('sha256', $this->formattedVendorId.$date, $this->formattedApiKey, true));
     }
 }

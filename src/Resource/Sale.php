@@ -4,7 +4,7 @@ namespace InsuranceHub\Resource;
 class Sale implements \JsonSerializable
 {
     public $productOfferingId;
-    public $sold;
+    public $sold = false;
 
     public function jsonSerialize() {
         return [

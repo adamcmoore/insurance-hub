@@ -7,7 +7,7 @@ class Request implements \JsonSerializable
     public $apiKey;
     public $vendorRequestReference;
     public $products;
-    public $premiumAsSummary;
+    public $premiumAsSummary = false;
 
     public function jsonSerialize() {
         return [

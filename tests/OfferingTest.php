@@ -1,16 +1,19 @@
 <?php
 
+use PHPUnit\Framework\TestCase;
 use InsuranceHub\InsuranceHub;
 use InsuranceHub\Resource\Product;
 
 
-class SendOfferingTest extends PHPUnit_Framework_TestCase
+class SendOfferingTest extends TestCase
 {
 
 	private $client;
 
 	public function __construct()
 	{
+		parent::__construct();
+
 		global $config;
 
 		$this->client = new InsuranceHub($config['vendor_id'], $config['api_key'], $config['offering_request_url'], $config['submit_offering_url']);

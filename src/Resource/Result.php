@@ -15,7 +15,7 @@ class Result implements \JsonSerializable
         return [
             'vendorId'            => $this->vendorId,
             'offeringId'          => $this->offeringId,
-            'vendorSaleReference' => $this->vendorSaleReference,
+            'vendorSaleReference' => strval($this->vendorSaleReference),
             'customerForename'    => $this->customerForename,
             'customerSurname'     => $this->customerSurname,
             'sales'               => $this->sales,

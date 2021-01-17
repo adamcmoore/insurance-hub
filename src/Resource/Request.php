@@ -12,7 +12,7 @@ class Request implements \JsonSerializable
     public function jsonSerialize() {
         return [
             'vendorId'               => $this->vendorId,
-            'vendorRequestReference' => $this->vendorRequestReference,
+			'vendorRequestReference' => strval($this->vendorRequestReference),
             'products'               => $this->products,
             'premiumAsSummary'       => $this->premiumAsSummary,
         ];

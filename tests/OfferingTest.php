@@ -57,7 +57,7 @@ class SendOfferingTest extends TestCase
 	{
 		$offering = $this->_createOffering();
 
-		$result = $this->client->sendSaleResult($offering, 'ref123', 'John', 'Smith');
+		$result = $this->client->sendSaleResult($offering, 123, 'John', 'Smith');
 
 		$this->AssertTrue($result);
 	}
@@ -67,7 +67,7 @@ class SendOfferingTest extends TestCase
 	{
 		$offering = $this->_createOffering();
 
-		$result = $this->client->sendNoSaleResult($offering, 'ref123', 'John', 'Smith');
+		$result = $this->client->sendNoSaleResult($offering, 123, 'John', 'Smith');
 
 		$this->AssertTrue($result);
 	}
